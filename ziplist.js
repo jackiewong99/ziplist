@@ -10,7 +10,7 @@ const zipList = (arr1, arr2) => {
   return zipArr;
 };
 
-const zipListTheSimpleWay = (arr1, arr2) => _.zip(arr1, arr2);
+const zipListTheSimpleWay = (arr1, arr2) => _.flatten(_.zip(arr1, arr2));
 
 console.log(zipList(chars, nums));
 console.log(zipListTheSimpleWay(chars, nums));
